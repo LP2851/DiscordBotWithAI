@@ -1,20 +1,9 @@
-import os
-
 import discord
 from discord.ext import commands
-from dotenv import load_dotenv
 
-from helpers import EmbedHelper, make_request
+from helpers import EmbedHelper, make_request, ENV, DISCORD_BOT_TOKEN
 from logger import log
 
-# region Setup Env Vars
-
-load_dotenv()
-
-DISCORD_BOT_TOKEN = os.getenv('DISCORD_BOT_TOKEN')
-ENV = os.getenv('ENV')
-
-# endregion
 
 # region Setup Bot
 
